@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JPArt</title>
+
+    <!-- Use your Insta logo as the browser tab icon, too -->
+    <link rel="icon" href="/JPLogo.png" />
+
+    <!-- Optional: inject config so you don't need to rebuild just to change endpoints -->
+    <script>
+      // Set these to your live values (safe to leave as-is if you've already built with env vars)
+      window.__API_BASE__ = "https://jpart.at/api.php";
+      window.__UPLOAD_ENDPOINT__ = "https://jpart.at/upload.php";
+      window.__UPLOAD_KEY__ = "G4nVqL2yT7mRb8x"; // must match upload.php
+      window.__ADMIN_API_KEY__ = "xM7rP2aQw9ZtB4c"; // must match api.php
+    </script>
+
+
+    <style>
+      /* Tiny CSS for the Instagram badge */
+      #insta-badge {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,.15);
+        text-decoration: none;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 12px;
+        color: #000;
+        z-index: 9999;
+        border: 1px solid rgba(0,0,0,.05);
+      }
+      #insta-badge img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      #root { min-height: 100vh; }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Your Instagram badge -->
+    <a
+      id="insta-badge"
+      href="https://www.instagram.com/jpartaustria/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow JPArt on Instagram"
+    >
+      <img src="/InstaLogo.jpeg" alt="Instagram logo" />
+      <span>Follow JPArt</span>
+    </a>
+  </body>
+</html>
