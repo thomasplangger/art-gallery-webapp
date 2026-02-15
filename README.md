@@ -17,6 +17,9 @@ This project was developed as a deployable gallery management system to streamli
 
 The architecture supports stable production CRUD operations while enabling advanced AI features through a modular backend design.
 
+Page:
+https://jpart.at/
+
 ---
 
 ## Core Engineering Components
