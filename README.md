@@ -53,6 +53,8 @@ The platform supports two backend modes:
 
 The frontend can dynamically switch API bases, allowing incremental migration and flexible deployment.
 
+The PHP/MySQL layer is deployed directly via cPanel on the production server and isn't included in this repo; this repository contains the FastAPI service layer and frontend.
+
 This demonstrates:
 - Backend interoperability
 - Progressive system evolution
